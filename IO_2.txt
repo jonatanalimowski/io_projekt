@@ -1,0 +1,25 @@
+1. Cel budowania systemu
+Głównym celem systemu jest automatyzacja i centralizacja procesów biznesowych dostawcy internetu. System ma za zadanie usprawnić baze klientów, procesy związane z rozliczeniami, zgłoszeniami technicznymi oraz monitorowanie infrastruktury.
+
+2.Zakres systemowy
+Moduł CRM, moduł bilingowo-księgowy, panel samoobsługowy dla klienta, moduł obsługi zgłoszeń serwisowych, moduł zarządzania urządzeniami sieciowymi klientów.
+
+3. Kontekst systemu
+Aktorzy zewnętrzni: Klienci, Pracownicy Biura Obsługi Klienta, Administratorzy sieci, Technicy w terenie.
+
+Systemy zewnętrzne:
+
+4. Przewidywalne mierzalne korzyści z wdrożenia
+-Skrócenie średniego czasu rozwiązywania zgłoszeń
+(Sposób wyliczenia: Całkowity czas obsługi wszystkich zgłoszeń / Liczba zgłoszeń. (Porównanie z okresem przed wdrożeniem).)
+
+-Redukcja czasu i kosztów procesu fakturowania oraz rozliczeń
+(Sposób wyliczenia: (Czas poświęcany na fakturowanie przed wdrożeniem - Czas po wdrożeniu) * Średnia stawka godzinowa pracownika.)
+
+-Zmniejszenie liczby zapytań telefonicznych do Biura Obsługi Klienta
+(Sposób wyliczenia: Różnica w liczbie odebranych połączeń miesięcznie przed i po udostępnieniu klientom panelu samoobsługowego)
+
+5. Niemierzalne korzyści z wdrożenia
+-Wzrost satysfakcji klientów.
+-Poprawa komfortu pracy pracowników BOK.
+-Szybszy przepływ informacji pomiędzy działem wsparcia a technikami w terenie.
