@@ -1,0 +1,39 @@
+3. Kontekst systemu
+Aktorzy zewnętrzni: Klienci, Pracownicy Biura Obsługi Klienta, Administratorzy sieci, Technicy w terenie.
+
+Klienci:
+- Wybranie pakietu
+- Złożenie zamówienia:
+	Anulowanie
+	Wybór terminu instalacji
+	Wybor sprzętu
+- Zgłoszenie usterki
+- Stworzenie konta
+	jakies lokalizacje itp.
+- Sprawdzenie dostępności usług
+- Zakonczenie korzystania z usługi -> oddanie sprzętu
+
+Pracownicy Biura Obsługi Klienta:
+- Wystawianie faktur
+- Komunikacja z klientem
+- Obsługa zamówień	
+- Odbiór sprzętu
+
+Administratorzy sieci:
+- Moderowanie sieci
+- Konserwacja sieci
+- Cybersec
+
+Technicy:
+- Montaż 
+- Diagnoza usterki
+- Konserwacja
+
+Janek - Klienci
+Daniel - Admini/Technicy
+Jonatan - BOK
+
+Opisy przypadkow:
+Złożenie zamówienia - instalacja
+Zakonczenie korzystania z usług - oddanie sprzętu
+Zgloszenie usterki - naprawa
