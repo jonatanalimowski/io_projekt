@@ -37,3 +37,20 @@ Opisy przypadkow:
 Złożenie zamówienia - instalacja
 Zakonczenie korzystania z usług - oddanie sprzętu
 Zgloszenie usterki - naprawa
+
+
+
+Opisy tekstowe wybranych aktorów:
+
+Administrator sieci:
+Odpowiedzialny za utrzymanie centralnej infrastruktury serwerowej i routingowej systemu. 
+Do jego głównych zadań należy monitorowanie obciążenia sieci, przeprowadzanie planowych prac 
+konserwacyjnych na węzłach głównych oraz dbanie o bezpieczeństwo infrastruktury (Cybersec), 
+w tym reagowanie na ataki typu DDoS, próby nieautoryzowanego dostępu i dbanie o aktualizacje zabezpieczeń. 
+Administrator rzadko ma bezpośredni kontakt z klientem detalicznym.
+
+Technik w terenie:
+Pracownik techniczno-terenowy, który fizycznie realizuje usługi bezpośrednio w lokalizacji klienta lub na węzłach dystrybucyjnych 
+(np. w skrzynkach osiedlowych). Jest "twarzą" firmy z perspektywy technicznej dla nowych klientów. Jego zadania obejmują fizyczny 
+montaż okablowania i sprzętu końcowego (routery, modemy), diagnozowanie i usuwanie fizycznych usterek zgłaszanych przez klientów 
+oraz bieżącą konserwację infrastruktury dostępowej (warstwa fizyczna).
