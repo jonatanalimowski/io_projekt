@@ -57,3 +57,96 @@ Pracownik techniczno-terenowy, który fizycznie realizuje usługi bezpośrednio 
 (np. w skrzynkach osiedlowych). Jest "twarzą" firmy z perspektywy technicznej dla nowych klientów. Jego zadania obejmują fizyczny 
 montaż okablowania i sprzętu końcowego (routery, modemy), diagnozowanie i usuwanie fizycznych usterek zgłaszanych przez klientów 
 oraz bieżącą konserwację infrastruktury dostępowej (warstwa fizyczna).
+
+
+1. Przypadek użycia: Złożenie zamówienia – instalacja usługi
+
+Aktor główny: Klient
+Aktorzy pomocniczy: Pracownik BOK, Technik w terenie
+
+Cel:
+Klient chce zamówić usługę internetową oraz umówić instalację w swojej lokalizacji.
+
+Warunki początkowe:
+Klient posiada konto w systemie.
+W lokalizacji klienta dostępna jest usługa.
+Scenariusz główny:
+Klient loguje się do systemu.
+Klient sprawdza dostępność usług dla swojej lokalizacji.
+Klient wybiera pakiet internetowy.
+Klient wybiera sprzęt (router/modem).
+Klient wybiera termin instalacji.
+Klient zatwierdza zamówienie.
+System zapisuje zamówienie i przekazuje je do BOK.
+Pracownik BOK weryfikuje poprawność zamówienia.
+System przydziela technika do realizacji instalacji.
+Technik wykonuje montaż sprzętu i aktywuje usługę.
+Klient otrzymuje potwierdzenie aktywacji usługi.
+Scenariusze alternatywne:
+3a. Usługa niedostępna w lokalizacji klienta → system informuje o braku dostępności.
+5a. Brak wolnych terminów → system proponuje inne daty.
+6a. Klient anuluje zamówienie → proces zostaje zakończony.
+Warunki końcowe:
+Usługa została aktywowana.
+Dane instalacji zapisano w systemie.
+
+
+
+2. Przypadek użycia: Zakończenie korzystania z usług – oddanie sprzętu
+
+Aktor główny: Klient
+Aktorzy pomocniczy: Pracownik BOK
+
+Cel:
+Klient chce zakończyć korzystanie z usług operatora i zwrócić wypożyczony sprzęt.
+
+Warunki początkowe:
+Klient posiada aktywną usługę.
+Sprzęt został wcześniej wydany klientowi.
+Scenariusz główny:
+Klient loguje się do systemu.
+Klient wybiera opcję zakończenia umowy.
+System wyświetla informacje o konieczności zwrotu sprzętu.
+Klient wybiera sposób zwrotu sprzętu.
+System rejestruje zgłoszenie zakończenia usługi.
+Pracownik BOK odbiera sprzęt i potwierdza jego zwrot.
+System dezaktywuje usługę klienta.
+System generuje końcowe rozliczenie.
+Scenariusze alternatywne:
+4a. Klient nie odda sprzętu w terminie → system nalicza opłatę.
+6a. Sprzęt uszkodzony → system zgłasza konieczność dodatkowej opłaty.
+Warunki końcowe:
+Konto klienta zostaje zamknięte.
+Sprzęt zostaje zwrócony lub rozliczony.
+
+3. Przypadek użycia: Zgłoszenie usterki – naprawa
+
+Aktor główny: Klient
+Aktorzy pomocniczy: Pracownik BOK, Technik w terenie, Administrator sieci
+
+Cel:
+
+Klient chce zgłosić problem z działaniem usługi internetowej.
+
+Warunki początkowe:
+Klient posiada aktywną usługę.
+Wystąpiła awaria lub problem techniczny.
+Scenariusz główny:
+Klient loguje się do systemu.
+Klient wybiera opcję zgłoszenia usterki.
+Klient opisuje problem.
+System rejestruje zgłoszenie.
+Pracownik BOK analizuje zgłoszenie.
+Administrator sieci sprawdza stan infrastruktury.
+Jeśli problem dotyczy infrastruktury fizycznej, system przydziela technika.
+Technik przeprowadza diagnozę w lokalizacji klienta.
+Technik usuwa usterkę.
+System oznacza zgłoszenie jako rozwiązane.
+Klient otrzymuje informację o zakończeniu naprawy.
+Scenariusze alternatywne:
+6a. Problem wynika z awarii centralnej → administrator usuwa problem bez wizyty technika.
+8a. Technik nie zastaje klienta → konieczne wyznaczenie nowego terminu.
+9a. Nie można usunąć usterki podczas pierwszej wizyty → zgłoszenie pozostaje otwarte.
+Warunki końcowe:
+Usterka została usunięta.
+Zgłoszenie zapisano w historii klienta.
