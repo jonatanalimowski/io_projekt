@@ -40,7 +40,10 @@ Zgloszenie usterki - naprawa
 
 
 
-Opisy tekstowe wybranych aktorów:
+Opisy tekstowe aktorów:
+
+Klient:
+Osoba korzystająca z naszego systemu w celu zarządzania swoim pakietem internetowym.
 
 Administrator sieci:
 Odpowiedzialny za utrzymanie centralnej infrastruktury serwerowej i routingowej systemu. 
