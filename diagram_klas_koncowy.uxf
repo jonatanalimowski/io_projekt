@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>5</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>115</x>
+      <y>460</y>
+      <w>90</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>PanelLogowania
+-
++ Zarejestruj() -&gt; bool
++ Zaloguj() -&gt; bool
++ ZobaczOferte() -&gt; Oferta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>270</x>
+      <y>415</y>
+      <w>90</w>
+      <h>115</h>
+    </coordinates>
+    <panel_attributes>Uzytkownik
+-
+- id: int
+- login: string
+- haslo: string
+- imie: string
+- nazwisko: string
+- lokalizacja: string
+- aktywnyPlan: Plan
+-
++ AktywujPlan() -&gt; bool
++ AnulujPlan() -&gt; bool
++ DokonajOplaty() -&gt; bool
++ ZamowNaprawe() -&gt; bool
++ Wyloguj() -&gt; bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>415</y>
+      <w>105</w>
+      <h>115</h>
+    </coordinates>
+    <panel_attributes>PracownikBOK
+-
+- id_pracownika: int
+- czyOnline: bool
+- imie: string
+- nazwisko: string
+-
++ WeryfikujZamowienie() -&gt; bool
++ WystawFakture()
++ WyslijTechnika()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>270</x>
+      <y>260</y>
+      <w>90</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Pakiet
+-
+- id: int
+- nazwa: string
+- cena: float
+- predkoscUpload: int
+- predkoscDownload: int
+- router: Router
+-</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>270</x>
+      <y>155</y>
+      <w>90</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Router
+-
+- marka: string
+- model: string
+- dataProdukcji: string
+-</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>345</y>
+      <w>40</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..1
+m2=1
+posiada</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>355</x>
+      <y>465</y>
+      <w>105</w>
+      <h>25</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+m1=1
+m2=1
+komunikuje się</panel_attributes>
+    <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>305</x>
+      <y>200</y>
+      <w>40</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=1
+zawiera</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>200</x>
+      <y>470</y>
+      <w>80</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>140.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>585</x>
+      <y>450</y>
+      <w>145</w>
+      <h>75</h>
+    </coordinates>
+    <panel_attributes>WezelSieciowy
+-
+- id_wezla: int
+- adresIP: string
+- lokalizacja: string
+- obciazenie: float
+- status: bool
+-
++ Restartuj() -&gt; bool
++ WykonajDiagnostyke() -&gt; bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>585</x>
+      <y>305</y>
+      <w>145</w>
+      <h>75</h>
+    </coordinates>
+    <panel_attributes>Administrator
+-
+- id_admina: int 
+- poziomDostepu: string
+-
++ MonitorujSiec() -&gt; bool
++ AktualizujZabezpieczenia() -&gt; bool
++ ZarzadzajWezlem(id_wezla: int) -&gt; bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>375</y>
+      <w>45</w>
+      <h>85</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*
+m2=1
+zarzadza</panel_attributes>
+    <additional_attributes>10.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>725</x>
+      <y>335</y>
+      <w>85</w>
+      <h>25</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*
+m2=1
+nadzoruje</panel_attributes>
+    <additional_attributes>150.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>800</x>
+      <y>305</y>
+      <w>145</w>
+      <h>75</h>
+    </coordinates>
+    <panel_attributes>ZlecenieTechniczne
+-
+- id_zlecenia: int
+- typZlecenia: string
+- opis: string
+- status: string
+- dataUtworzenia: string
+-
++ PrzypiszTechnika(id_technika: int) -&gt; void
++ ZaktualizujStatus() -&gt; bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1025</x>
+      <y>300</y>
+      <w>145</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Technik
+-
+- id_technika: int
+- imie: string
+- nazwisko: string
+- czyDostepny: bool
+- obecnaLokalizacja: string
+-
++ OdbierzZlecenie() -&gt; bool
++ DiagnozujUsterke() -&gt; string
++ ZamknijZlecenie() -&gt; bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>940</x>
+      <y>340</y>
+      <w>95</w>
+      <h>25</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*
+m2=1
+realizuje</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>355</x>
+      <y>170</y>
+      <w>755</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*
+m2=1
+montuje/serwisuje</panel_attributes>
+    <additional_attributes>10.0;20.0;1480.0;30.0;1480.0;260.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>375</y>
+      <w>580</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=*
+dotyczy</panel_attributes>
+    <additional_attributes>10.0;310.0;10.0;420.0;1140.0;420.0;1140.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>385</x>
+      <y>190</y>
+      <w>105</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>Zgloszenie usterki
+-
+- id: int
+- opis: string
+- dataZgloszenia: date
+- status: string
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>240</y>
+      <w>140</w>
+      <h>185</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*
+m2=1
+przesyla</panel_attributes>
+    <additional_attributes>260.0;10.0;10.0;350.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>485</x>
+      <y>215</y>
+      <w>325</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*
+m2=1
+tworzy</panel_attributes>
+    <additional_attributes>630.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>295</y>
+      <w>105</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>Faktura
+-
+- id: int
+- opis: string
+- dataZgloszenia: date
+- status: string
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>500</x>
+      <y>345</y>
+      <w>45</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*
+m2=1
+wystawia</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>345</y>
+      <w>150</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*
+m2=1
+posiada</panel_attributes>
+    <additional_attributes>280.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+</diagram>
