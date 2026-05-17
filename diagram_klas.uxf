@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.0.0">
-  <zoom_level>10</zoom_level>
+  <zoom_level>6</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>630</y>
-      <w>180</w>
-      <h>80</h>
+      <y>546</y>
+      <w>108</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>PanelLogowania
 -
@@ -19,10 +19,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>310</x>
-      <y>540</y>
-      <w>180</w>
-      <h>230</h>
+      <x>186</x>
+      <y>492</y>
+      <w>108</w>
+      <h>138</h>
     </coordinates>
     <panel_attributes>Uzytkownik
 -
@@ -44,10 +44,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>620</x>
-      <y>540</y>
-      <w>210</w>
-      <h>230</h>
+      <x>372</x>
+      <y>492</y>
+      <w>126</w>
+      <h>138</h>
     </coordinates>
     <panel_attributes>PracownikBOK
 -
@@ -64,10 +64,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>310</x>
-      <y>230</y>
-      <w>180</w>
-      <h>180</h>
+      <x>186</x>
+      <y>306</y>
+      <w>108</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>Pakiet
 -
@@ -83,10 +83,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>310</x>
-      <y>20</y>
-      <w>180</w>
-      <h>100</h>
+      <x>186</x>
+      <y>180</y>
+      <w>108</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>Router
 -
@@ -99,10 +99,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>390</x>
-      <y>400</y>
-      <w>80</w>
-      <h>160</h>
+      <x>234</x>
+      <y>408</y>
+      <w>48</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=0..1
@@ -113,10 +113,10 @@ posiada</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>480</x>
-      <y>640</y>
-      <w>160</w>
-      <h>50</h>
+      <x>288</x>
+      <y>552</y>
+      <w>96</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>lt=&lt;-&gt;
 m1=1
@@ -127,10 +127,10 @@ komunikuje się</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>380</x>
-      <y>110</y>
-      <w>80</w>
-      <h>140</h>
+      <x>228</x>
+      <y>234</y>
+      <w>48</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=1
@@ -141,13 +141,162 @@ zawiera</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>170</x>
-      <y>650</y>
-      <w>160</w>
-      <h>40</h>
+      <x>102</x>
+      <y>558</y>
+      <w>96</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 </panel_attributes>
     <additional_attributes>140.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>666</x>
+      <y>498</y>
+      <w>174</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>WezelSieciowy
+-
+- id_wezla: int
+- adresIP: string
+- lokalizacja: string
+- obciazenie: float
+- status: bool
+-
++ Restartuj() -&gt; bool
++ WykonajDiagnostyke() -&gt; bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>666</x>
+      <y>318</y>
+      <w>174</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Administrator
+-
+- id_admina: int 
+- poziomDostepu: string
+-
++ MonitorujSiec() -&gt; bool
++ AktualizujZabezpieczenia() -&gt; bool
++ ZarzadzajWezlem(id_wezla: int) -&gt; bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>744</x>
+      <y>402</y>
+      <w>54</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*
+m2=1
+zarzadza</panel_attributes>
+    <additional_attributes>10.0;160.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>834</x>
+      <y>354</y>
+      <w>210</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*
+m2=1
+nadzoruje</panel_attributes>
+    <additional_attributes>330.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1032</x>
+      <y>318</y>
+      <w>174</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>ZlecenieTechniczne
+-
+- id_zlecenia: int
+- typZlecenia: string
+- opis: string
+- status: string
+- dataUtworzenia: string
+-
++ PrzypiszTechnika(id_technika: int) -&gt; void
++ ZaktualizujStatus() -&gt; bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1338</x>
+      <y>312</y>
+      <w>174</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>Technik
+-
+- id_technika: int
+- imie: string
+- nazwisko: string
+- czyDostepny: bool
+- obecnaLokalizacja: string
+-
++ OdbierzZlecenie() -&gt; bool
++ DiagnozujUsterke() -&gt; string
++ ZamknijZlecenie() -&gt; bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1200</x>
+      <y>360</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*
+m2=1
+realizuje</panel_attributes>
+    <additional_attributes>10.0;20.0;230.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>198</y>
+      <w>1152</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=*
+m2=1
+montuje/serwisuje</panel_attributes>
+    <additional_attributes>10.0;20.0;1890.0;30.0;1890.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>222</x>
+      <y>402</y>
+      <w>906</w>
+      <h>306</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=*
+dotyczy</panel_attributes>
+    <additional_attributes>10.0;380.0;10.0;490.0;1490.0;490.0;1490.0;10.0</additional_attributes>
   </element>
 </diagram>
