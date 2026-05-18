@@ -23,3 +23,7 @@ Systemy zewnętrzne:
 -Wzrost satysfakcji klientów.
 -Poprawa komfortu pracy pracowników BOK.
 -Szybszy przepływ informacji pomiędzy działem wsparcia a technikami w terenie.
+
+6.Diagram klas to_do:
+-poprawic faktury
+-i troche przemyslec ten diagram
