@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="15.0.0">
+<diagram program="umlet" version="15.1">
   <zoom_level>6</zoom_level>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>198</x>
-      <y>180</y>
+      <x>444</x>
+      <y>222</y>
       <w>60</w>
       <h>18</h>
     </coordinates>
@@ -16,8 +16,8 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>222</x>
-      <y>192</y>
+      <x>468</x>
+      <y>234</y>
       <w>18</w>
       <h>66</h>
     </coordinates>
@@ -27,8 +27,8 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>354</x>
-      <y>180</y>
+      <x>600</x>
+      <y>222</y>
       <w>60</w>
       <h>18</h>
     </coordinates>
@@ -39,8 +39,8 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>378</x>
-      <y>192</y>
+      <x>624</x>
+      <y>234</y>
       <w>18</w>
       <h>30</h>
     </coordinates>
@@ -50,8 +50,8 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>66</x>
-      <y>180</y>
+      <x>312</x>
+      <y>222</y>
       <w>36</w>
       <h>72</h>
     </coordinates>
@@ -62,8 +62,8 @@ Klient</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>78</x>
-      <y>252</y>
+      <x>324</x>
+      <y>294</y>
       <w>12</w>
       <h>384</h>
     </coordinates>
@@ -73,8 +73,8 @@ Klient</panel_attributes>
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>504</x>
-      <y>174</y>
+      <x>750</x>
+      <y>216</y>
       <w>72</w>
       <h>72</h>
     </coordinates>
@@ -85,8 +85,8 @@ Pracownik BOK</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>534</x>
-      <y>246</y>
+      <x>780</x>
+      <y>288</y>
       <w>12</w>
       <h>384</h>
     </coordinates>
@@ -96,8 +96,8 @@ Pracownik BOK</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>222</x>
-      <y>246</y>
+      <x>468</x>
+      <y>288</y>
       <w>12</w>
       <h>114</h>
     </coordinates>
@@ -107,8 +107,8 @@ Pracownik BOK</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>84</x>
-      <y>240</y>
+      <x>330</x>
+      <y>282</y>
       <w>150</w>
       <h>24</h>
     </coordinates>
@@ -119,8 +119,8 @@ Pracownik BOK</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>84</x>
-      <y>264</y>
+      <x>330</x>
+      <y>306</y>
       <w>150</w>
       <h>24</h>
     </coordinates>
@@ -131,8 +131,8 @@ Pracownik BOK</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>228</x>
-      <y>336</y>
+      <x>474</x>
+      <y>378</y>
       <w>162</w>
       <h>24</h>
     </coordinates>
@@ -143,8 +143,8 @@ Pracownik BOK</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>378</x>
-      <y>210</y>
+      <x>624</x>
+      <y>252</y>
       <w>12</w>
       <h>180</h>
     </coordinates>
@@ -154,8 +154,8 @@ Pracownik BOK</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>84</x>
-      <y>288</y>
+      <x>330</x>
+      <y>330</y>
       <w>150</w>
       <h>24</h>
     </coordinates>
@@ -166,8 +166,8 @@ Pracownik BOK</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>84</x>
-      <y>312</y>
+      <x>330</x>
+      <y>354</y>
       <w>150</w>
       <h>24</h>
     </coordinates>
@@ -178,8 +178,8 @@ Pracownik BOK</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>384</x>
-      <y>354</y>
+      <x>630</x>
+      <y>396</y>
       <w>162</w>
       <h>24</h>
     </coordinates>
@@ -190,20 +190,19 @@ Pracownik BOK</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>0</x>
-      <y>402</y>
+      <x>246</x>
+      <y>444</y>
       <w>570</w>
       <h>96</h>
     </coordinates>
-    <panel_attributes>alt
-wybor="kurier"</panel_attributes>
+    <panel_attributes>alt</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>222</x>
-      <y>354</y>
+      <x>468</x>
+      <y>396</y>
       <w>18</w>
       <h>102</h>
     </coordinates>
@@ -213,8 +212,8 @@ wybor="kurier"</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>378</x>
-      <y>384</y>
+      <x>624</x>
+      <y>426</y>
       <w>18</w>
       <h>66</h>
     </coordinates>
@@ -224,8 +223,8 @@ wybor="kurier"</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>84</x>
-      <y>408</y>
+      <x>330</x>
+      <y>450</y>
       <w>462</w>
       <h>24</h>
     </coordinates>
@@ -236,8 +235,8 @@ wybor="kurier"</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>384</x>
-      <y>444</y>
+      <x>630</x>
+      <y>486</y>
       <w>162</w>
       <h>24</h>
     </coordinates>
@@ -248,8 +247,8 @@ wybor="kurier"</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>378</x>
-      <y>438</y>
+      <x>624</x>
+      <y>480</y>
       <w>12</w>
       <h>42</h>
     </coordinates>
@@ -259,8 +258,8 @@ wybor="kurier"</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>222</x>
-      <y>444</y>
+      <x>468</x>
+      <y>486</y>
       <w>12</w>
       <h>42</h>
     </coordinates>
@@ -270,8 +269,8 @@ wybor="kurier"</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>228</x>
-      <y>444</y>
+      <x>474</x>
+      <y>486</y>
       <w>162</w>
       <h>24</h>
     </coordinates>
@@ -282,8 +281,8 @@ wybor="kurier"</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>156</x>
-      <y>450</y>
+      <x>402</x>
+      <y>492</y>
       <w>78</w>
       <h>18</h>
     </coordinates>
@@ -293,8 +292,8 @@ wybor="kurier"</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>138</x>
-      <y>444</y>
+      <x>384</x>
+      <y>486</y>
       <w>24</w>
       <h>24</h>
     </coordinates>
@@ -304,8 +303,8 @@ wybor="kurier"</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>222</x>
-      <y>480</y>
+      <x>468</x>
+      <y>522</y>
       <w>18</w>
       <h>90</h>
     </coordinates>
@@ -315,8 +314,8 @@ wybor="kurier"</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>378</x>
-      <y>474</y>
+      <x>624</x>
+      <y>516</y>
       <w>18</w>
       <h>90</h>
     </coordinates>
@@ -326,20 +325,19 @@ wybor="kurier"</panel_attributes>
   <element>
     <id>UMLFrame</id>
     <coordinates>
-      <x>0</x>
-      <y>516</y>
+      <x>246</x>
+      <y>558</y>
       <w>570</w>
       <h>96</h>
     </coordinates>
-    <panel_attributes>opt
-else</panel_attributes>
+    <panel_attributes>opt</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>84</x>
-      <y>522</y>
+      <x>330</x>
+      <y>564</y>
       <w>462</w>
       <h>24</h>
     </coordinates>
@@ -350,8 +348,8 @@ else</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>228</x>
-      <y>558</y>
+      <x>474</x>
+      <y>600</y>
       <w>162</w>
       <h>24</h>
     </coordinates>
@@ -362,8 +360,8 @@ else</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>384</x>
-      <y>558</y>
+      <x>630</x>
+      <y>600</y>
       <w>162</w>
       <h>24</h>
     </coordinates>
@@ -374,8 +372,8 @@ else</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>378</x>
-      <y>552</y>
+      <x>624</x>
+      <y>594</y>
       <w>12</w>
       <h>42</h>
     </coordinates>
@@ -385,8 +383,8 @@ else</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>222</x>
-      <y>558</y>
+      <x>468</x>
+      <y>600</y>
       <w>12</w>
       <h>42</h>
     </coordinates>
@@ -396,8 +394,8 @@ else</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>156</x>
-      <y>564</y>
+      <x>402</x>
+      <y>606</y>
       <w>78</w>
       <h>18</h>
     </coordinates>
@@ -407,8 +405,8 @@ else</panel_attributes>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>138</x>
-      <y>558</y>
+      <x>384</x>
+      <y>600</y>
       <w>24</w>
       <h>24</h>
     </coordinates>
@@ -418,8 +416,8 @@ else</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>222</x>
-      <y>594</y>
+      <x>468</x>
+      <y>636</y>
       <w>18</w>
       <h>54</h>
     </coordinates>
@@ -429,12 +427,36 @@ else</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>378</x>
-      <y>588</y>
+      <x>624</x>
+      <y>630</y>
       <w>18</w>
       <h>54</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>258</x>
+      <y>462</y>
+      <w>72</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+wybor="kurier"</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>258</x>
+      <y>576</y>
+      <w>30</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+else</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>
