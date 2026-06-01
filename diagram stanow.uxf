@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="15.0.0">
+<diagram program="umlet" version="15.1">
   <zoom_level>10</zoom_level>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>290</x>
-      <y>10</y>
+      <x>440</x>
+      <y>90</y>
       <w>20</w>
       <h>20</h>
     </coordinates>
@@ -15,21 +15,21 @@
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>390</x>
-      <y>0</y>
+      <x>540</x>
+      <y>80</y>
       <w>120</w>
       <h>50</h>
     </coordinates>
-    <panel_attributes>Utworzone
+    <panel_attributes>Funkcjonalny
 --
-PrzypiszTechnika</panel_attributes>
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>300</x>
-      <y>10</y>
+      <x>450</x>
+      <y>90</y>
       <w>110</w>
       <h>30</h>
     </coordinates>
@@ -39,96 +39,95 @@ PrzypiszTechnika</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>500</x>
-      <y>0</y>
+      <x>650</x>
+      <y>80</y>
       <w>240</w>
-      <h>50</h>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-Przypisaon
-technika?PrzypiszTechnika</panel_attributes>
+przypisanie[technik_dostepny]</panel_attributes>
     <additional_attributes>220.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>720</x>
-      <y>0</y>
+      <x>870</x>
+      <y>80</y>
       <w>120</w>
       <h>60</h>
     </coordinates>
-    <panel_attributes>Przypisane
+    <panel_attributes>Oczekuje
 --
-technik przyjuje
-OdbierzZlecenie</panel_attributes>
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>830</x>
-      <y>10</y>
-      <w>220</w>
-      <h>150</h>
+      <x>980</x>
+      <y>80</y>
+      <w>240</w>
+      <h>160</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-technik przyjmuje
-OdbierzZlecenie</panel_attributes>
-    <additional_attributes>90.0;130.0;90.0;10.0;10.0;10.0</additional_attributes>
+przekazanie technikowi</panel_attributes>
+    <additional_attributes>180.0;140.0;180.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>860</x>
-      <y>140</y>
+      <x>1100</x>
+      <y>220</y>
       <w>120</w>
       <h>60</h>
     </coordinates>
     <panel_attributes>W Diagnozie
 --
-diagnoza gotowa</panel_attributes>
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>910</x>
-      <y>190</y>
-      <w>130</w>
-      <h>110</h>
+      <x>850</x>
+      <y>270</y>
+      <w>370</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-diagnoza gotowa</panel_attributes>
-    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+rozpoczecie naprawy[zdatne do naprawy] </panel_attributes>
+    <additional_attributes>10.0;60.0;350.0;60.0;350.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>870</x>
-      <y>280</y>
+      <x>770</x>
+      <y>470</y>
       <w>100</w>
       <h>40</h>
     </coordinates>
-    <panel_attributes>Naprawione</panel_attributes>
+    <panel_attributes>Odesłany
+--
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>910</x>
-      <y>310</y>
+      <x>500</x>
+      <y>540</y>
       <w>30</w>
-      <h>70</h>
+      <h>30</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 </panel_attributes>
-    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>910</x>
-      <y>360</y>
+      <x>500</x>
+      <y>550</y>
       <w>20</w>
       <h>20</h>
     </coordinates>
@@ -138,240 +137,61 @@ diagnoza gotowa</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>700</x>
-      <y>280</y>
-      <w>190</w>
-      <h>50</h>
+      <x>800</x>
+      <y>340</y>
+      <w>180</w>
+      <h>150</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-naprawa gotowa
+odeslij[naprawa gotowa]
 </panel_attributes>
-    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>560</x>
-      <y>270</y>
+      <x>710</x>
+      <y>290</y>
       <w>150</w>
       <h>60</h>
     </coordinates>
     <panel_attributes>W Naprawie
---
-zamkniecie zlecenia
-ZamknijZlecenie</panel_attributes>
+--</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>390</x>
-      <y>280</y>
-      <w>190</w>
-      <h>50</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-wymaga naprawy
-</panel_attributes>
-    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLState</id>
-    <coordinates>
-      <x>250</x>
-      <y>270</y>
-      <w>150</w>
-      <h>60</h>
-    </coordinates>
-    <panel_attributes>W Naprawie
---
-zamkniecie zlecenia
-ZamknijZlecenie</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>150</x>
+      <x>480</x>
       <y>210</y>
-      <w>150</w>
-      <h>200</h>
+      <w>640</w>
+      <h>280</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-
-
-
-
-
-
-
-
-niepoprawne/odrzuć
-
-</panel_attributes>
-    <additional_attributes>10.0;180.0;10.0;90.0;100.0;90.0</additional_attributes>
+odrzucenie[niezdatne do naprawy]</panel_attributes>
+    <additional_attributes>10.0;260.0;10.0;20.0;620.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>110</x>
-      <y>390</y>
+      <x>460</x>
+      <y>470</y>
       <w>100</w>
       <h>40</h>
     </coordinates>
-    <panel_attributes>Odrzucone</panel_attributes>
+    <panel_attributes>Do zwrotu
+--</panel_attributes>
     <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLState</id>
-    <coordinates>
-      <x>560</x>
-      <y>390</y>
-      <w>150</w>
-      <h>60</h>
-    </coordinates>
-    <panel_attributes>Oczekuje na czesci
---
-entry czesc dostarczona</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>200</x>
-      <y>400</y>
-      <w>380</w>
-      <h>50</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-zamkniecie
-</panel_attributes>
-    <additional_attributes>10.0;20.0;360.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>620</x>
-      <y>320</y>
-      <w>100</w>
-      <h>90</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-brak czesci
-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLSpecialState</id>
-    <coordinates>
-      <x>150</x>
-      <y>600</y>
-      <w>20</w>
-      <h>20</h>
-    </coordinates>
-    <panel_attributes>type=initial</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>160</x>
-      <y>590</y>
-      <w>130</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-</panel_attributes>
-    <additional_attributes>110.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>410</x>
-      <y>590</y>
-      <w>130</w>
-      <h>50</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-wlaczenie
-zasilania</panel_attributes>
-    <additional_attributes>110.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
       <x>520</x>
-      <y>580</y>
+      <y>290</y>
       <w>150</w>
       <h>60</h>
     </coordinates>
-    <panel_attributes>Uruchamianie
---
-test pomyslny</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLState</id>
-    <coordinates>
-      <x>270</x>
-      <y>580</y>
-      <w>150</w>
-      <h>60</h>
-    </coordinates>
-    <panel_attributes>Wlaczony
---
-wlaczenie zasilania</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>660</x>
-      <y>590</y>
-      <w>130</w>
-      <h>50</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-wlaczenie
-zasilania</panel_attributes>
-    <additional_attributes>110.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLState</id>
-    <coordinates>
-      <x>770</x>
-      <y>580</y>
-      <w>150</w>
-      <h>60</h>
-    </coordinates>
-    <panel_attributes>Włączony
---
-błąd krytyczny
-WykonajDiagnostyke</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>830</x>
-      <y>630</y>
-      <w>90</w>
-      <h>90</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-wlaczenie
-zasilania</panel_attributes>
-    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLState</id>
-    <coordinates>
-      <x>770</x>
-      <y>700</y>
-      <w>150</w>
-      <h>60</h>
-    </coordinates>
-    <panel_attributes>Restartowanie
+    <panel_attributes>Oczekuje na czesci
 --
 </panel_attributes>
     <additional_attributes/>
@@ -379,83 +199,33 @@ zasilania</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>330</x>
-      <y>630</y>
-      <w>460</w>
-      <h>120</h>
+      <x>550</x>
+      <y>340</y>
+      <w>200</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-wyłączanie</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;100.0;440.0;100.0</additional_attributes>
+after(60 dni)/odrzucenie</panel_attributes>
+    <additional_attributes>10.0;160.0;30.0;160.0;30.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>910</x>
-      <y>590</y>
-      <w>140</w>
-      <h>50</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-restart
-ukonczony</panel_attributes>
-    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLState</id>
-    <coordinates>
-      <x>1030</x>
-      <y>580</y>
-      <w>150</w>
+      <x>580</x>
+      <y>250</y>
+      <w>230</w>
       <h>60</h>
     </coordinates>
-    <panel_attributes>Awaria
---
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>830</x>
-      <y>460</y>
-      <w>220</w>
-      <h>140</h>
-    </coordinates>
     <panel_attributes>lt=&lt;-
-nadmierny ruch</panel_attributes>
-    <additional_attributes>200.0;20.0;10.0;20.0;10.0;120.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLState</id>
-    <coordinates>
-      <x>1030</x>
-      <y>450</y>
-      <w>150</w>
-      <h>60</h>
-    </coordinates>
-    <panel_attributes>Przeciążenie
---
+zamowienie czesci[brak czesci]
 </panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1090</x>
-      <y>500</y>
-      <w>110</w>
-      <h>100</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-spadek ruchu</panel_attributes>
-    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;40.0;10.0;20.0;210.0;20.0;210.0;40.0</additional_attributes>
   </element>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>140</x>
-      <y>960</y>
+      <x>260</x>
+      <y>770</y>
       <w>20</w>
       <h>20</h>
     </coordinates>
@@ -465,20 +235,56 @@ spadek ruchu</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>150</x>
-      <y>950</y>
-      <w>130</w>
+      <x>270</x>
+      <y>760</y>
+      <w>140</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
+stworzenie</panel_attributes>
+    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>390</x>
+      <y>750</y>
+      <w>150</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Nieodczytane
+--
 </panel_attributes>
-    <additional_attributes>110.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>80</x>
+      <y>1280</y>
+      <w>20</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>90</x>
+      <y>1270</y>
+      <w>190</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+rozpoczecie zmiany</panel_attributes>
+    <additional_attributes>170.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
       <x>260</x>
-      <y>940</y>
+      <y>1260</y>
       <w>150</w>
       <h>60</h>
     </coordinates>
@@ -491,32 +297,32 @@ spadek ruchu</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>400</x>
-      <y>950</y>
-      <w>130</w>
+      <y>1270</y>
+      <w>210</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-</panel_attributes>
-    <additional_attributes>110.0;20.0;10.0;20.0</additional_attributes>
+przypisanie do zlecenia</panel_attributes>
+    <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>510</x>
-      <y>940</y>
+      <x>590</x>
+      <y>1260</y>
       <w>150</w>
       <h>60</h>
     </coordinates>
     <panel_attributes>Przypisany
 --
-wyjazd na miejsce</panel_attributes>
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>760</x>
-      <y>940</y>
+      <x>920</x>
+      <y>1260</y>
       <w>150</w>
       <h>60</h>
     </coordinates>
@@ -528,33 +334,32 @@ wyjazd na miejsce</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>650</x>
-      <y>950</y>
-      <w>130</w>
-      <h>50</h>
+      <x>730</x>
+      <y>1270</y>
+      <w>210</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-Wyjazd 
-na miejsce</panel_attributes>
-    <additional_attributes>110.0;20.0;10.0;20.0</additional_attributes>
+wyjazd na miejsce</panel_attributes>
+    <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>900</x>
-      <y>950</y>
-      <w>130</w>
-      <h>40</h>
+      <x>1010</x>
+      <y>1310</y>
+      <w>80</w>
+      <h>150</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 przyjazd</panel_attributes>
-    <additional_attributes>110.0;20.0;10.0;20.0</additional_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>1010</x>
-      <y>940</y>
+      <x>920</x>
+      <y>1440</y>
       <w>150</w>
       <h>60</h>
     </coordinates>
@@ -566,27 +371,423 @@ przyjazd</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>580</x>
-      <y>990</y>
-      <w>280</w>
-      <h>100</h>
+      <x>650</x>
+      <y>1090</y>
+      <w>290</w>
+      <h>190</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-anulowanie
-zlecenia</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;70.0;260.0;70.0;260.0;10.0</additional_attributes>
+anulowanie zlecenia</panel_attributes>
+    <additional_attributes>270.0;20.0;10.0;20.0;10.0;170.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>300</x>
-      <y>990</y>
-      <w>280</w>
+      <x>670</x>
+      <y>0</y>
+      <w>210</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Stan sprzetu diagram stanow</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>500</x>
+      <y>500</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>590</x>
+      <y>340</y>
+      <w>200</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+wznowienie[przybycie_czesci]
+</panel_attributes>
+    <additional_attributes>150.0;10.0;150.0;50.0;40.0;50.0;40.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>810</x>
+      <y>500</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>810</x>
+      <y>550</y>
+      <w>20</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>type=final</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>540</x>
+      <y>660</y>
+      <w>200</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Diagram stanów zgłoszenia</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>460</x>
+      <y>960</y>
+      <w>250</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+Diagram stanów technika w terenie</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>1310</y>
+      <w>700</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+zakonczenie zlecenia</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;260.0;150.0;430.0;150.0;680.0;240.0;680.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>90</x>
+      <y>1160</y>
+      <w>220</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+zakonczenie zmiany</panel_attributes>
+    <additional_attributes>10.0;20.0;200.0;20.0;200.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>80</x>
+      <y>1170</y>
+      <w>20</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>type=final</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>920</x>
+      <y>1080</y>
+      <w>150</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Powrót
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>990</x>
+      <y>1130</y>
+      <w>150</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+anulowanie zlecenia</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1060</x>
+      <y>1100</y>
+      <w>220</w>
+      <h>390</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+anulowanie zlecenia</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0;80.0;370.0;10.0;370.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>1000</y>
+      <w>610</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;260.0;10.0;20.0;590.0;20.0;590.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>530</x>
+      <y>760</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+odczytanie</panel_attributes>
+    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>650</x>
+      <y>750</y>
+      <w>150</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Odczytane
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>710</x>
+      <y>630</y>
+      <w>220</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+ocena[dotyczy sprzetu]</panel_attributes>
+    <additional_attributes>200.0;20.0;50.0;20.0;50.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>910</x>
+      <y>620</y>
+      <w>150</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Oczekuje na technika
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1050</x>
+      <y>630</y>
+      <w>190</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+przypisanie technika</panel_attributes>
+    <additional_attributes>170.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1220</x>
+      <y>620</y>
+      <w>150</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>W trakcie naprawy
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>790</x>
+      <y>760</y>
+      <w>270</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+ocena[dotyczy oprogramowania]</panel_attributes>
+    <additional_attributes>250.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1040</x>
+      <y>750</y>
+      <w>190</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Skierowano do supportu
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1360</x>
+      <y>630</y>
+      <w>190</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+ocena[naprawiono]</panel_attributes>
+    <additional_attributes>170.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1240</x>
+      <y>530</y>
+      <w>210</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+ocena[nie można naprawić]</panel_attributes>
+    <additional_attributes>190.0;20.0;50.0;20.0;50.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1430</x>
+      <y>520</y>
+      <w>150</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Zamknięte
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1530</x>
+      <y>620</y>
+      <w>150</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Rozwiązane
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>710</x>
+      <y>800</y>
+      <w>410</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+ocena[brak kategorii]</panel_attributes>
+    <additional_attributes>390.0;10.0;390.0;60.0;10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1220</x>
+      <y>760</y>
+      <w>270</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+zamknięcie[koniec konwersacji]</panel_attributes>
+    <additional_attributes>250.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>1470</x>
+      <y>770</y>
+      <w>20</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>type=final</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1120</x>
+      <y>670</y>
+      <w>190</w>
       <h>100</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-zakonczenie
-zmiany</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;70.0;260.0;70.0;260.0;10.0</additional_attributes>
+potrzeba naprawy</panel_attributes>
+    <additional_attributes>170.0;10.0;170.0;60.0;10.0;60.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>1640</x>
+      <y>500</y>
+      <w>20</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>type=final</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1570</x>
+      <y>510</y>
+      <w>100</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>80.0;10.0;80.0;40.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1670</x>
+      <y>610</y>
+      <w>100</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>80.0;10.0;80.0;40.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>1740</x>
+      <y>600</y>
+      <w>20</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>type=final</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
