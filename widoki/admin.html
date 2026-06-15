@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel Administratora</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-color: #050505;
+      --panel-bg: rgba(20, 20, 25, 0.6);
+      --border-color: rgba(255, 255, 255, 0.06);
+      --text-main: #f8fafc;
+      --text-muted: #64748b;
+      --accent-1: #0ea5e9; /* Cyan/Blue dla admina */
+      --accent-2: #8b5cf6; /* Purple */
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --terminal-font: 'JetBrains Mono', monospace;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Ostrzejszy glow dla technicznego klimatu */
+    .glow-1 {
+      position: absolute;
+      top: -20%; left: -10%; width: 60vw; height: 60vw;
+      background: radial-gradient(circle, rgba(14, 165, 233, 0.08) 0%, transparent 60%);
+      z-index: -1;
+    }
+
+    .glow-2 {
+      position: absolute;
+      bottom: -20%; right: -10%; width: 60vw; height: 60vw;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.08) 0%, transparent 60%);
+      z-index: -1;
+    }
+
+    /* Header */
+    header {
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+      background: rgba(5, 5, 5, 0.8);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h2 {
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 1px;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-size: 14px;
+    }
+
+    .status-indicator {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: rgba(14, 165, 233, 0.1);
+      border: 1px solid rgba(14, 165, 233, 0.2);
+      border-radius: 20px;
+      color: var(--accent-1);
+      font-weight: 600;
+      font-family: var(--terminal-font);
+      font-size: 12px;
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 8px; /* Kwadratowy avatar dla admina (bardziej technicznie) */
+      background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1600px;
+      margin: 0 auto;
+      padding: 30px;
+      gap: 30px;
+    }
+
+    /* Menu boczne */
+    aside {
+      width: 260px;
+      background: var(--panel-bg);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 30px 20px;
+      height: fit-content;
+    }
+
+    aside ul {
+      list-style: none;
+    }
+
+    aside li {
+      padding: 14px 20px;
+      margin-bottom: 8px;
+      border-radius: 10px;
+      cursor: pointer;
+      color: var(--text-muted);
+      font-weight: 600;
+      transition: all 0.3s ease;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    aside li:hover {
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--text-main);
+    }
+
+    aside li.active {
+      background: rgba(14, 165, 233, 0.1);
+      color: var(--accent-1);
+      border-left: 3px solid var(--accent-1);
+    }
+
+    /* Główny kontent */
+    main {
+      flex: 1;
+    }
+
+    main h1 {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 30px;
+      font-family: var(--terminal-font);
+    }
+
+    /* Karty statystyk (Dashboard) */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background: var(--panel-bg);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid var(--border-color);
+      padding: 25px;
+      border-radius: 16px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, var(--accent-1), var(--success));
+      opacity: 0.5;
+    }
+
+    .card:nth-child(2)::before { background: linear-gradient(90deg, var(--danger), var(--warning)); }
+    .card:nth-child(3)::before { background: linear-gradient(90deg, var(--accent-2), var(--accent-1)); }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .card h3 {
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .card p {
+      font-size: 32px;
+      font-weight: 700;
+      font-family: var(--terminal-font);
+      color: var(--text-main);
+    }
+
+    .card .metric { font-size: 16px; color: var(--text-muted); font-weight: 400; }
+
+    /* Tabela operacyjna */
+    h2.section-title {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: var(--text-main);
+      font-family: var(--terminal-font);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .table-wrapper {
+      background: var(--panel-bg);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 5px 20px;
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    th {
+      color: var(--text-muted);
+      font-weight: 600;
+      font-size: 12px;
+      padding: 18px 15px;
+      border-bottom: 1px solid var(--border-color);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    td {
+      padding: 18px 15px;
+      border-bottom: 1px solid rgba(255,255,255,0.03);
+      color: var(--text-main);
+      font-weight: 400;
+      font-size: 13px;
+    }
+
+    .node-id {
+      font-family: var(--terminal-font);
+      color: var(--accent-1);
+    }
+
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: rgba(255, 255, 255, 0.02); }
+
+    /* Odznaki statusów */
+    .badge {
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-family: var(--terminal-font);
+    }
+
+    .badge-ok { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .badge-warn { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+    .badge-crit { background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); }
+
+    /* Przyciski Akcji */
+    .action-btn {
+      background: transparent;
+      color: var(--text-main);
+      border: 1px solid var(--border-color);
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 12px;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-family: var(--terminal-font);
+    }
+
+    .action-btn:hover {
+      background: rgba(255,255,255,0.1);
+    }
+
+    .action-btn.primary {
+      background: rgba(14, 165, 233, 0.2);
+      color: var(--accent-1);
+      border: 1px solid var(--accent-1);
+    }
+
+    .action-btn.primary:hover {
+      background: var(--accent-1);
+      color: var(--bg-color);
+    }
+
+    .action-btn.danger {
+      background: rgba(239, 68, 68, 0.1);
+      color: var(--danger);
+      border: 1px solid rgba(239, 68, 68, 0.5);
+    }
+
+    .action-btn.danger:hover {
+      background: var(--danger);
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="glow-1"></div>
+<div class="glow-2"></div>
+
+<header>
+  <h2>ISP - admin</h2>
+
+  <div class="user-info">
+    <div class="status-indicator">
+      SYS_OK
+    </div>
+    <div class="avatar">ROOT</div>
+    <span style="font-family: var(--terminal-font); font-size: 12px;">Admin: sys_admin_01</span>
+  </div>
+</header>
+
+<div class="container">
+
+  <aside>
+    <ul>
+      <li class="active">[+] Dashboard</li>
+      <li>[~] Topologia Sieci</li>
+      <li>[~] Obciążenie Węzłów</li>
+      <li>[!] CyberSec / Zapora</li>
+      <li>[>] Backup Konfiguracji</li>
+      <li>[>] Aktualizacje (Firmware)</li>
+      <li>[_] Terminal (SSH)</li>
+    </ul>
+  </aside>
+
+  <main>
+    <h1>> System_Zarządzania_Siecią</h1>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Ruch Sieciowy (Core)</h3>
+        <p>42.8 <span class="metric">Gb/s</span></p>
